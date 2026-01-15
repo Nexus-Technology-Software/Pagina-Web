@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Nexus Technology Software</title>
+    <link rel="icon" type="image/x-icon" href="img/icon2.ico">
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/portafolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">Nexus Technology</span>
+                            <span class="logo-abbr">NTS</span>
+                        </div>
+                    </a>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="portafolio.html" class="portafolio-link active">Portafolio</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner del Portafolio -->
+    <section class="portfolio-hero">
+        <div class="portfolio-hero-content">
+            <h1>Nuestro <span class="highlight">Portafolio</span></h1>
+            <p>Descubre algunos de los proyectos más destacados que hemos desarrollado para nuestros clientes, transformando sus ideas en soluciones digitales exitosas.</p>
+            <a href="index.html#contacto" class="btn btn-primary">¿Tienes un proyecto en mente?</a>
+        </div>
+    </section>
+
+    <!-- Filtros de proyectos -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <h2>Explora nuestros proyectos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="mobile">Móvil</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos del Portafolio -->
+    <section class="portfolio-projects">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card" data-category="software" id="proyecto1">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Sistema de gestión empresarial">
+                        <div class="project-overlay">
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Gestión Empresarial</h3>
+                        <p class="project-description">Desarrollo de un sistema integral para la gestión de inventarios, ventas, compras y reportes financieros para una empresa de retail.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Panel de administración con dashboards interactivos</li>
+                                <li>Control de inventarios en tiempo real</li>
+                                <li>Generación automática de reportes financieros</li>
+                                <li>Integración con sistemas de pago</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contacto" class="btn btn-secondary">Solicitar similar</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="project-card" data-category="ecommerce web" id="proyecto2">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Plataforma E-commerce">
+                        <div class="project-overlay">
+                            <span class="project-category">E-commerce</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Plataforma E-commerce</h3>
+                        <p class="project-description">Tienda online completa con carrito de compras, pasarela de pagos, gestión de productos y panel de administración.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>Stripe API</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Diseño responsive y optimizado para móviles</li>
+                                <li>Integración con múltiples pasarelas de pago</li>
+                                <li>Sistema de recomendaciones de productos</li>
+                                <li>Panel de administración intuitivo</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contacto" class="btn btn-secondary">Solicitar similar</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="project-card" data-category="mobile" id="proyecto3">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Aplicación móvil">
+                        <div class="project-overlay">
+                            <span class="project-category">Móvil</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Aplicación Móvil de Delivery</h3>
+                        <p class="project-description">App desarrollada para iOS y Android para un servicio de delivery de alimentos con funcionalidades de geolocalización y notificaciones push.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Google Maps API</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Seguimiento en tiempo real de pedidos</li>
+                                <li>Sistema de valoraciones y reseñas</li>
+                                <li>Notificaciones push para actualizaciones</li>
+                                <li>Integración con múltiples métodos de pago</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contacto" class="btn btn-secondary">Solicitar similar</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 4 -->
+                <div class="project-card" data-category="web" id="proyecto4">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Página web corporativa">
+                        <div class="project-overlay">
+                            <span class="project-category">Web</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Página Web Corporativa</h3>
+                        <p class="project-description">Sitio web corporativo con diseño moderno y responsive para una empresa de consultoría, optimizado para SEO y conversión.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>WordPress</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Diseño completamente responsive</li>
+                                <li>Optimización SEO avanzada</li>
+                                <li>Integración con redes sociales</li>
+                                <li>Panel de administración CMS</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contacto" class="btn btn-secondary">Solicitar similar</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 5 -->
+                <div class="project-card" data-category="software" id="proyecto5">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sistema de reservas">
+                        <div class="project-overlay">
+                            <span class="project-category">Software</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Reservas Online</h3>
+                        <p class="project-description">Plataforma para gestión de reservas y citas para una cadena de hoteles, con integración de calendario y sistema de pagos.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Sistema de gestión de habitaciones</li>
+                                <li>Calendario de disponibilidad en tiempo real</li>
+                                <li>Confirmación automática de reservas</li>
+                                <li>Panel de administración para múltiples hoteles</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contacto" class="btn btn-secondary">Solicitar similar</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 6 -->
+                <div class="project-card" data-category="web ecommerce" id="proyecto6">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Marketplace">
+                        <div class="project-overlay">
+                            <span class="project-category">E-commerce</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Marketplace Multi-vendedor</h3>
+                        <p class="project-description">Plataforma marketplace donde múltiples vendedores pueden ofrecer sus productos y los compradores pueden comparar y comprar.</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>AWS</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Perfiles personalizados para vendedores</li>
+                                <li>Sistema de valoraciones y reputación</li>
+                                <li>Carrito de compras unificado</li>
+                                <li>Panel de administración robusto</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contacto" class="btn btn-secondary">Solicitar similar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <h2>¿Listo para comenzar tu proyecto?</h2>
+                <p>Contáctanos para discutir tus ideas y obtener una cotización personalizada.</p>
+                <a href="index.html#contacto" class="btn btn-primary">Contactar ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div>
+                    <h3>Nexus Technology Software</h3>
+                    <p>Soluciones tecnológicas para el éxito de tu negocio</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li>Migración a Web</li>
+                    <li>Desarrollo de Software</li>
+                    <li>Páginas Web Profesionales</li>
+                    <li>Mantenimiento de Computadoras</li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> nexustechnologysoftware@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +591 73640751</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Nexus Technology Software (NTS). Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script-index.js"></script>
+    <script src="js/portafolio.js"></script>
+</body>
+</html>
