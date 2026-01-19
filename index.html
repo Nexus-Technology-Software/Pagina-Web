@@ -330,11 +330,13 @@
     const message = document.getElementById("message").value;
 
     // Enviar el formulario usando EmailJS
-    emailjs.send("service_9acxtfa", {
-      from_name: name,
-      from_email: email,
-      subject: subject,
-      message: message
+    emailjs.send("service_9acxtfa","template_40y4ydp",{
+    title: "Hola",
+    name: "Jhon",
+    subject: "Sistema",
+    time: "asd",
+    message: "hola",
+    email: "asd@gmail.com",
     })
     .then(function(response) {
       alert("¡Mensaje enviado correctamente!");
@@ -410,6 +412,7 @@
 </body>
 
 </html>
+
 
 
 
