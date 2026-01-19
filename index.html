@@ -297,28 +297,55 @@
                     </div>
                     <h3>Horario de Atención</h3>
                     <p>Lunes a Viernes: 08:30 - 12:30 / 14:00 - 18:00</p>
-                    <p>Sábados: 8:30 - 12:30</p>
+                    <p>Sábados: 08:30 - 12:30</p>
                 </div>
             </div>
 
             <div class="contact-form">
-                <h3>Envíanos un mensaje</h3>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Tu nombre" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Tu correo electrónico" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Asunto" id="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Tu mensaje" id="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                </form>
-            </div>
+    <h3>Envíanos un mensaje</h3>
+    <form id="contactForm">
+        <div class="form-group">
+            <input type="text" placeholder="Tu nombre" id="name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Tu correo electrónico" id="email" required>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Asunto" id="subject" required>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Tu mensaje" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+    </form>
+</div>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    // Enviar el formulario usando EmailJS
+    emailjs.send("service_9acxtfa", {
+      from_name: name,
+      from_email: email,
+      subject: subject,
+      message: message
+    })
+    .then(function(response) {
+      alert("¡Mensaje enviado correctamente!");
+      // Limpiar el formulario después de enviar
+      document.getElementById("contactForm").reset();
+    }, function(error) {
+      alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+    });
+  });
+</script>
+
         </div>
     </section>
 
@@ -374,9 +401,16 @@
     </footer>
 
     <script src="js/script-index.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("service_9acxtfa");  // Reemplaza con tu User ID de EmailJS
+  })();
+</script>
 </body>
 
 </html>
+
 
 
 
