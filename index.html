@@ -20,13 +20,14 @@
             <div class="nav-container">
                 <div class="logo">
                     <div class="logo-icon">
-                        <img src="img/icon3.ico" alt="Logo" class="logo-img">
+                        <img src="ruta/a/tu-imagen.png" alt="Logo Nexus" class="logo-img">
                     </div>
                     <div class="logo-text">
                         <span class="logo-name">Nexus Technology Software</span>
                         <span class="logo-abbr">NTS</span>
                     </div>
                 </div>
+
                 <button class="menu-toggle" id="menuToggle">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -268,25 +269,27 @@
                     </div>
                     <h3>Teléfono / WhatsApp</h3>
                     <p>+591 73640751</p>
-                    <a href="https://wa.me/59173640751?text=Hola,%20quiero%20más%20información" target="_blank" class="btn-whatsapp">
-                  💬 WhatsApp
-                </a>
-                
-                <style>
-                .btn-whatsapp {
-                  display: inline-block;
-                  background-color: #25D366;
-                  color: white;
-                  padding: 15px 20px;
-                  border-radius: 50px;
-                  text-decoration: none;
-                  font-size: 16px;
-                  font-weight: bold;
-                }
-                .btn-whatsapp:hover {
-                  background-color: #1ebe5d;
-                }
-                </style>
+                    <a href="https://wa.me/59173640751?text=Hola,%20quiero%20más%20información" target="_blank"
+                        class="btn-whatsapp">
+                        💬 WhatsApp
+                    </a>
+
+                    <style>
+                        .btn-whatsapp {
+                            display: inline-block;
+                            background-color: #25D366;
+                            color: white;
+                            padding: 15px 20px;
+                            border-radius: 50px;
+                            text-decoration: none;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+
+                        .btn-whatsapp:hover {
+                            background-color: #1ebe5d;
+                        }
+                    </style>
 
 
                 </div>
@@ -302,51 +305,51 @@
             </div>
 
             <div class="contact-form">
-    <h3>Envíanos un mensaje</h3>
-    <form id="contactForm">
-        <div class="form-group">
-            <input type="text" placeholder="Tu nombre" id="name" required>
-        </div>
-        <div class="form-group">
-            <input type="email" placeholder="Tu correo electrónico" id="email" required>
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Asunto" id="subject" required>
-        </div>
-        <div class="form-group">
-            <textarea placeholder="Tu mensaje" id="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-    </form>
-</div>
+                <h3>Envíanos un mensaje</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu nombre" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu correo electrónico" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Asunto" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tu mensaje" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
 
-<script>
-  document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+            <script>
+                document.getElementById("contactForm").addEventListener("submit", function (event) {
+                    event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const subject = document.getElementById("subject").value;
+                    const message = document.getElementById("message").value;
 
-    // Enviar el formulario usando EmailJS
-    emailjs.send("service_9acxtfa","template_40y4ydp",{
-    title: "",
-    name: "",
-    subject: "",
-    time: "",
-    message: "",
-    email: "",
-    })
-    .then(function(response) {
-      alert("¡Mensaje enviado correctamente!");
-      // Limpiar el formulario después de enviar
-      document.getElementById("contactForm").reset();
-    }, function(error) {
-      alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
-    });
-  });
-</script>
+                    // Enviar el formulario usando EmailJS
+                    emailjs.send("service_9acxtfa", "template_40y4ydp", {
+                        title: "",
+                        name: "",
+                        subject: "",
+                        time: "",
+                        message: "",
+                        email: "",
+                    })
+                        .then(function (response) {
+                            alert("¡Mensaje enviado correctamente!");
+                            // Limpiar el formulario después de enviar
+                            document.getElementById("contactForm").reset();
+                        }, function (error) {
+                            alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+                        });
+                });
+            </script>
 
         </div>
     </section>
@@ -404,19 +407,11 @@
 
     <script src="js/script-index.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("service_9acxtfa");  // Reemplaza con tu User ID de EmailJS
-  })();
-</script>
+    <script>
+        (function () {
+            emailjs.init("service_9acxtfa");  // Reemplaza con tu User ID de EmailJS
+        })();
+    </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
